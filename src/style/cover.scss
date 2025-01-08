@@ -1,0 +1,26 @@
+#cover {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #1D1D1D;
+    .title {
+        font-size: 48px;
+        font-family: "Fira Sans", serif;
+        font-weight: 700;
+        color: #fff;
+        @media screen and (max-width: 768px) {
+            font-size: 32px;
+        }
+        .subtitle {
+            font-size: 14px;
+            font-family: "Poppins", serif;
+            font-weight: 700;
+            color: #fff;
+            text-align: center;
+        }
+    }
+}

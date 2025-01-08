@@ -1,0 +1,33 @@
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 24px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+    @media screen and (max-width: 768px) {
+        padding: 16px 12px;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        width: fit-content;
+        font-family: "Poppins", serif;
+        font-weight: 700;
+        mix-blend-mode: difference;
+    }
+    .links {
+        display: flex;
+        gap: 12px;
+        transform: rotate(-90deg);
+        transform-origin: 0 0;
+        color: #fff;
+        font-family: "Poppins", serif;
+        font-weight: 700;
+        mix-blend-mode: difference;
+    }
+}

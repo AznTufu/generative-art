@@ -1,0 +1,26 @@
+#inspiration {
+    width: 100vw;
+    padding: 40px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        @media screen and (max-width: 900px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media screen and (max-width: 600px) {
+            grid-template-columns: 1fr;
+        }
+        img {
+            width: 360px;
+            height: 360px;
+            @media screen and (max-width: 1300px) {
+                width: 240px;
+                height: 240px;
+            }
+        }
+    }
+}
