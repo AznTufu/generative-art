@@ -143,7 +143,7 @@ export default class Canvas extends Component<CanvasProps> {
     }
   }
 
-  drawParticles(ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement, params: { particlesColor, particlesNumber: number }) {
+  drawParticles(ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement, params: { particlesColor: string, particlesNumber: number }) {
     const drawParticle = (x: number, y: number) => {
       ctx.fillStyle = params.particlesColor;
       ctx.beginPath();
