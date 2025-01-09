@@ -1,14 +1,14 @@
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
+    body {
+        position: relative;
+    }
 }
 
 .tp-dfwv {
     top: unset !important;
-    bottom: -163%;
-    @media screen and (max-width: 1300px) {
-        bottom: -123%;
-    }
+    bottom: 22%;
     @media screen and (max-width: 1300px) {
         display: none;
     }
