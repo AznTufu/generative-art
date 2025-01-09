@@ -1,11 +1,12 @@
 import { Component } from 'react'
-import '../style/work.scss'
+import '../style/inspiration.scss'
 import { image1, image2, image3, image4, image5, image6, image7, image8, image9 } from '../assets/inspiration';
 
 export default class inspiration extends Component {
   render() {
     return (
       <section id='inspiration'>
+        <div className='title'>Inspiration</div>
         <div className='container'>
           <img src={image1} alt="bird" />
           <img src={image2} alt="bird" />

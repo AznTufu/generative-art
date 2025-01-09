@@ -8,7 +8,9 @@ function App() {
   return (
     <>
       <div className='main'>
-        <Canvas showCanvas1={true} />
+        <div>
+          <Canvas showCanvas1={true} />
+        </div>
         <Navbar />
         <Inspiration />
         <Cover />

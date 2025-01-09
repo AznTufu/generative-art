@@ -2,8 +2,19 @@
     width: 100vw;
     padding: 40px 40px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 30px;
+    .title {
+        font-size: 32px;
+        font-family: "Fira Sans", serif;
+        font-weight: 700;
+        color: #fff;
+        @media screen and (max-width: 768px) {
+            font-size: 24px;
+        }
+    }
     .container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

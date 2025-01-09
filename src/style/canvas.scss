@@ -1,6 +1,37 @@
 .header {
     width: 100vw;
     height: 100vh;
+    position: relative;
+    .header-content {
+        position: absolute;
+        bottom: 32px;
+        width: 100%;
+        text-align: center;
+        .header-title {
+            font-size: 62px;
+            font-family: "Fira Sans", serif;
+            font-weight: 700;
+            color: #fff;
+            white-space: nowrap;
+            overflow: hidden;
+            transition:  opacity 0.25s ease;
+            @media screen and (max-width: 768px) {
+                font-size: 48px;
+            }
+            @media screen and (max-width: 540px) {
+                font-size: 32px;
+            }
+        }
+        .description ,.date {
+            margin-top: 10px;
+            font-size: 14px;
+            letter-spacing: 8px;
+            font-family: "Roboto", serif;
+            font-weight: 700;
+            color: #fff;
+            text-align: center;
+        }
+    }
     #canvas {
         position: fixed;
         top: 0;
@@ -14,16 +45,19 @@
     height: 600px;
     width: 100%;
     clip-path: polygon(10% 0, 90% 0, 90% 100%, 10% 100%);
+    @media screen and (max-width: 1060px) {
+        clip-path: unset;
+    }
     @media screen and (max-width: 768px) {
         height: 400px;
-        clip-path: polygon(20% 0, 80% 0, 80% 100%, 20% 100%);
+        width: 400px;
     }
     @media screen and (max-width: 600px) {
         height: 360px;
-        clip-path: polygon(15% 0, 85% 0, 85% 100%, 15% 100%);
+        width: 360px;
     }
     @media screen and (max-width: 450px) {
         height: 300px;
-        clip-path: polygon(10% 0, 90% 0, 90% 100%, 10% 100%);
+        width: 300px;
     }
 }

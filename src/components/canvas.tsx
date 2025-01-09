@@ -2,6 +2,7 @@ import { Component } from 'react';
 import '../style/canvas.scss';
 import bird from '../assets/bird.png';
 import { Pane } from "tweakpane";
+import Typewriter from "typewriter-effect";
 
 interface CanvasProps {
   showCanvas1: boolean;
@@ -189,6 +190,23 @@ export default class Canvas extends Component<CanvasProps> {
       <>
         {this.props.showCanvas1 ? (
           <div className='header'>
+            <div className='header-content'>
+              <div className='header-title'>
+                <Typewriter
+                  options={{
+                    strings: ["L’Entrave Invisible"],
+                    loop: true,
+                    autoStart: true,
+                    delay: 100,
+                    deleteSpeed: 50,
+                    cursor: "",
+                  }}
+                />
+              </div>
+              <div className="description">NIRO</div>
+              <div className="date">MARCH 31 2024</div>
+            </div>
+
             <canvas id='canvas'></canvas>
           </div>
         ) : (
